@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document created by Riley Morse, March 23rd 2019*/
+
+body {
+	font-family: "Times New Roman", Arial Black, Helvetica, Geneva;
+	font-size: 14px;
+	line-height: 1.3em;
+	color: #FFFFFF;
+	background-color: #82C2F0;
+	padding: 0 35px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
+h1 {
+	font-size: 32px;
+	font-variant:small-caps;
+	letter-spacing: .20em;
+	line-height: 2.5em;
+}
+h2 {
+	font-size: 18px;
+	padding: 5px;
+	letter-spacing: 0.25em;
+	background-color: #2A6FFF;
+}
+
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a:visited {
+	font-weight: bold;
+	color: #1825E8;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 10px;
+}
+ol {
+	margin-left: 12px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #2A6FFF 1px;
+}
+td {
+	padding: 8px;
+	border: solid #2A6FFF 3px;
+}
+th {
+	font-weight: bold;
+	background-color: #2A6FFF;
+	text-align: center;
+	padding: 6px;
+	border: solid #2A6FFF 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #2A6FFF 2px;
+}
+
+img {
+	border: dashed #2A6FFF 3px;
+
+}
+
+iframe {
+	border: solid #2A6FFF 1px;
+	padding: 8px;
+	margin: 8px;
+}
