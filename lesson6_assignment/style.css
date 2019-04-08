@@ -1,19 +1,21 @@
 @charset "UTF-8";
-/* CSS Document created by Riley Morse, March 23rd 2019*/
+/* CSS Document created by Riley Morse, April 5th 2019*/
 
 body {
 	font-family: "Times New Roman", Arial Black, Helvetica, Geneva;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.3em;
 	color: #FFFFFF;
 	background-color: #82C2F0;
 	padding: 0 35px;
+	margin: 0;
 }
 
 /* basic text styles ----------------------------  */
 p, li, td {
 	letter-spacing: 0.1em;
 	color: #FFFFFF;
+	padding: 0 40px;
 }
 h1 {
 	font-size: 32px;
@@ -25,7 +27,6 @@ h2 {
 	font-size: 18px;
 	padding: 5px;
 	letter-spacing: 0.25em;
-	background-color: #2A6FFF;
 }
 
 
@@ -37,7 +38,7 @@ a:link {
 }
 a:visited {
 	font-weight: bold;
-	color: #1825E8;
+	color: #2A6FFF;
 	text-decoration: none;
 }
 a:hover {
@@ -74,13 +75,61 @@ hr {
 	border: solid #2A6FFF 2px;
 }
 
-img {
-	border: dashed #2A6FFF 3px;
-
-}
 
 iframe {
 	border: solid #2A6FFF 1px;
 	padding: 8px;
 	margin: 8px;
+}
+#container {
+	width: 85%;
+	margin: auto;
+	background-color: #82C2F0;
+	overflow: hidden;
+}
+#banner {
+	width: 100%;
+	height: 250px;
+}
+#header1 {
+	width: 100%; 
+	background-color: #1825E8;
+	border-bottom: 1px solid #800000;
+	text-align:center;
+}
+#header2{
+	background-color: #1825E8;
+}
+#content {
+	width: 100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color: #1825E8;
+}
+#robot{
+	float:left;
+	padding-right:20px;
+	padding-bottom: 20px;
+	padding-top:10px;
+}
+#authorpic{
+	float:left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+
+#quote {
+	font-style: italic;
+	clear:both;
+	background-color: #1825E8;
+	
+}
+#table {
+	clear:both;
+	background-color: #1825E8;
+}
+#footer {
+	clear:both;
+	
 }
