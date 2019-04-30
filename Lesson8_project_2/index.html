@@ -1,0 +1,277 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
+
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <style>
+      .navbar-inverse {
+      background-color: #191970;
+      border-color: #00008B;
+      }
+      .navbar-inverse .navbar-nav>li>a {
+      color: #E0E0E0;
+      }
+      .navbar-inverse .navbar-brand {
+      color: #E0E0E0;
+      }
+      @media (min-width: 768px){
+      .navbar-wrapper .navbar {
+      padding-right: 0;
+      padding-left: 0;
+      border-radius: 30px;
+      }
+      .navbar-wrapper {
+      margin-top: 0px;
+      }
+      }
+      .carousel-inner > .item > img {
+      height: auto;
+      }
+      @media (max-width: 899px){
+      .carousel {
+      height: 400px;
+      }
+      .carousel .item {
+      height: 400px;
+      }
+      }
+      @media (max-width: 719px){
+      .carousel {
+      height: 400px;
+      }
+      .carousel .item {
+      height: 400px;
+      }
+      .carousel-inner > .item > img {
+      height: 400px;
+      width: 719px;
+      max-width: 719px;
+      }
+      }
+      .btn-primary {
+      color: #fff;
+      background-color: #191970;
+      border-color: #00008B;
+      }
+    </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Space!</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Additional Information</a></li>
+                    <li><a href="#"></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/img1.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Final Frontier</h1>
+              <p>What left is there for human race to conquer on Earth? Who cares, lets go to space!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/img2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Browse Our Shop</h1>
+              <p>Find merchandise that is out of this world in our space themed shop!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Shop!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/img3.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Pictures of the Universe</h1>
+              <p>Our Gallery is the same as our Universe, ever-growing! Check out some amazing shots!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="fourth-slide" src="images/img4.jpg" alt="Fourth Slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>When do we go?</h1>
+              <p>Find out more about future space flights, and what they are hoped to achieve!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Future Endeavors!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/img8.jpg" alt="Planet" width="140" height="140">
+          <h2>Planets</h2>
+          <p>From large to small, there are thousands of unique planets in our universe, with many still yet to be discovered!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/img9.jpg" alt="Sun" width="140" height="140">
+          <h2>Stars</h2>
+          <p>Giant flaming balls of gas, Stars are the center of solar systems, using their large gravitational pull to make the planets revolve around them!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/img10.jpg" alt="Galaxy" width="140" height="140">
+          <h2>Galaxies</h2>
+          <p>Tons of Solar Systems grouped up in different shapes, the most common being the spiral.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Ever Expanding <span class="text-muted">It'll never stop.</span></h2>
+          <p class="lead">In accordance to the Big Bang Theory, the Universe is still being created as we speak, ever expanding its reach and growing constantly at an amazing rate!</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/img5.jpg" alt="Space place" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">A Stunning Scene <span class="text-muted">Beauty in the stars</span></h2>
+          <p class="lead">We have been fascinated with the night sky since the first men walked the Earth. Now, thousands of years later, we can finally learn more about whats above our skies.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/img6.jpg" alt="Space place2" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Our Tiny Place <span class="text-muted">and our exploration into the stars</span></h2>
+          <p class="lead">While humans ourselves haven't gone far from Earth, our creations have! See some of what our inventions are and what they see.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/img7.jpg" alt="Space place3" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2019 Riley Morse &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>');</script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    
+    <script src="js/holder.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
